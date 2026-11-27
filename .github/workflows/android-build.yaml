@@ -1,5 +1,5 @@
 
-name: Android CI Build  
+name: Android CI Build
 
 on:
   workflow_dispatch:
@@ -9,7 +9,8 @@ on:
 
 jobs:
   android-build:
-    uses: ani7546/ani-shared-workflows/.github/workflows/android-build.yaml@main
+    uses: ani7546/ani-shared-workflows/.github/workflows/android-build.yml@main
     with:
       working_directory: MobileCICD
-      node_version: "22"  
+      node_version: "22"
+    secrets: inherit
